@@ -1,0 +1,201 @@
+<html>
+<head>
+<link href="para.css" rel="stylesheet"/>
+<style>
+    ul{
+        color: mediumvioletred;
+    }
+    h3{
+        color:lightcoral;
+    }
+.m{width:100%;
+height:100%;
+}
+
+.n{width:100%;
+height:100%;
+
+}
+.k{width:20%;
+height:100%;
+float:left;
+}
+
+
+
+.c{
+position:relative;
+left:310px;
+top:-600px;
+
+max-height:auto;
+max-width:1020px;
+}
+
+</style>
+<script type="text/javascript">
+function fun1()
+{
+	document.getElementById("div1").innerHTML=document.getElementById("t1").value;
+}
+function fun2()
+{
+	document.getElementById("div2").innerHTML=document.getElementById("t2").value;
+}
+function fun3()
+{
+	document.getElementById("div3").innerHTML=document.getElementById("t3").value;
+}
+function fun4()
+{
+	document.getElementById("div4").innerHTML=document.getElementById("t4").value;
+}
+function fun5()
+{
+	document.getElementById("div5").innerHTML=document.getElementById("t5").value;
+}
+</script>
+{% load static %}
+<link rel="stylesheet" href={% static "para.css"%}>
+</head>
+<body1>
+
+ <div class="m">
+	
+	    <div class="k">
+                    
+					
+                        
+                          
+					     
+					
+					   
+      <h1>CSS Tutorial</h1>  
+<!-- <button class="button button1"><a id="str" href="c.html">HTML HOME</a></button>            -->
+<button class="button button2"><a id="str" href="/intro">CSS Introduction</a></button>
+<button class="button button3"><a id="str" href="/selector">CSS Selector</a></button>
+<button class="button button1"><a id="str" href="/comments">CSS Comments</a></button>
+<button class="button button2"><a id="str" href="/element">CSS Border</a></button>
+<button class="button button3"><a id="str" href="/boxmodel">CSS Boxmodel</a></button>
+<button class="button button1"><a id="str" href="/list">CSS List</a></button>
+<button class="button button2"><a id="str" href="/navigation">CSS Navigation</a></button>
+<button class="button button3"><a id="str" href="/position">CSS Position</a></button>
+<button class="button button1"><a id="str" href="/imggallery">CSS ImageGallery</a></button>
+<button class="button button2"><a id="str" href="/align">CSS Align</a></button>
+<button class="button button3"><a id="str" href="/form">CSS Form</a></button>
+
+		</div>			  
+             
+    </div>    
+<div class="c">
+<article>
+<div class="l">
+<h1>CSS COMMENTS </h1>
+</div>
+<h3>
+    CSS comments are not displayed in the browser, but they can help document your source code.
+ </h3>
+  <h3><ul>
+      <li>Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+        Comments are ignored by browsers.</li>
+      <li>A CSS comment is placed inside the  and starts with /* and ends with */</li>
+      
+  </ul></h3>
+  <h1 style="color:goldenrod"> Single line comment :</h1>
+ <h1>See this example:</h1>
+ <div style="float:left;width:100%">
+
+<div style="float:left;width:50%">
+
+<div class="runcode" style="height:70%">
+
+<textarea id="t1" style="width:100%;height:515px;font-size:20px;color:#0040ff;background-color:#f1f1f1!important">
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    /* This is a single-line comment */
+    p {
+      color: red;
+    } 
+    </style>
+    </head>
+    <body>
+    
+    <p>Hello World!</p>
+    <p>This paragraph is styled with CSS.</p>
+    <p>CSS comments are not shown in the output.</p>
+    
+    </body>
+    </html>
+</textarea> 
+</div>
+<input type="button" value="Try yourself" onclick="fun1()"  style="color:blue; height:38px;width:150px;background-color:#00FFCC; border:#00FFCC;font-weight:bold;font-size:20px ;border-radius:20px; cursor: pointer; "onmouseover="this.style.color='#990066' "onmouseout="this.style.color='blue'"/><br/>
+
+</div>
+<div style="float:left;width:50%">
+<div id="div1" style="font-size:25px;;margin-left:30px"><h1>output</h1></div>
+</div>
+
+</div>
+
+<hr/>
+
+<h1 style="color:goldenrod"> Multi line comment :</h1>
+ <h1>See this example:</h1>
+ <div style="float:left;width:100%">
+
+<div style="float:left;width:50%">
+
+<div class="runcode" style="height:70%">
+
+<textarea id="t2" style="width:100%;height:515px;font-size:20px;color:#0040ff;background-color:#f1f1f1!important">
+
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+} 
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>This paragraph is styled with CSS.</p>
+<p>CSS comments are not shown in the output.</p>
+
+</body>
+</html>
+
+</textarea> 
+</div>
+<input type="button" value="Try yourself" onclick="fun2()"  style="color:blue; height:38px;width:150px;background-color:#00FFCC; border:#00FFCC;font-weight:bold;font-size:20px ;border-radius:20px; cursor: pointer; "onmouseover="this.style.color='#990066' "onmouseout="this.style.color='blue'"/><br/>
+
+</div>
+<div style="float:left;width:50%">
+<div id="div2" style="font-size:25px;;margin-left:30px"><h1>output</h1></div>
+</div>
+
+</div>
+
+<hr/>
+
+
+
+
+
+ 
+</article>
+</div>
+
+
+</body1>
+</html>

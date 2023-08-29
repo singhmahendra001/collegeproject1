@@ -1,0 +1,102 @@
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    width:100%;
+  }
+  
+  .button1 {background-color:#99FF66;} /* Blue */
+  .button2 {background-color:#99FF66;} /* Green */
+  .button3 {background-color: #99FF66;}
+  .k{
+       overflow: scroll;
+       position:fixed;
+       top:-10px;
+       /* color: aqua; */
+  }
+  .l{
+      
+      font-size:25px;
+      color:#610b38;
+  }
+  .j{
+  font-size:25px;
+  width:100%;
+  height:30%;
+  background-color:#D9EEE1;	
+  }
+  .p{
+  font-size:25px;
+  width:100%;
+  height:50%;
+  background-color:#D9EEE1;	
+  }
+  .u{
+      background-image:url('image/text-editors.png');
+      width:100%;
+      height:100%;
+      background-color:red;
+  }
+  .ui{
+      background-image:url('image/text-editors2.png');
+      width:100%;
+      height:70%;
+      background-color:red;
+  }
+  .uii{
+      background-image:url('image/text-editors3.png');
+      width:100%;
+      height:90%;
+      background-color:red;
+  }
+  .uii1{
+      background-image:url('image/text-editors4.png');
+      width:100%;
+      height:73%;
+      background-color:red;
+  }
+  .uii2{
+      background-image:url('image/text-editors5.png');
+      width:100%;
+      height:65%;
+      background-color:red;
+  }
+  .u1{
+      background-image:url('image/html-building-blocks.png');
+      width:50%;
+      height:78%;
+      background-color:red;
+      text-align:center;
+  }
+  .patg{
+      width:100%;
+      height:60px;
+      background-color:#d6bdbd4d;
+  }
+  .runcode{
+      width:100%;
+      /* height:70%; */
+      background-color:#d6bdbd4d;
+  }
+  .patg3{
+      width:74%;
+      height:60%;
+      
+      background-image:url('image/html-elements.png');
+  }
+  #str{
+      color: blue;
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .l h1{
+      margin: 0px;
+  }
+  

@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block tittle %}About{% endblock tittle %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>about</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styl2.css' %}">
+    <style>
+        #my1{
+            margin-top: -20px;
+            margin-left: 150px;
+        }
+        p{
+            color:blue;
+            margin-left: 170px;
+            margin-top: -80px;
+        }
+        #m1{
+            height:110px;
+            width:110px;
+            border-radius: 360px;
+        }
+        .myp1{
+            height:150px;
+        background-color:white;
+        }
+        body {
+            background-color: yellow;
+        }
+
+        h3{
+            margin-left: 50px;
+           font-size:30px;
+           font-style: oblique;
+           font-family:lucida;    
+
+        
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3> "E- learning is a learning system which provides education through electronic media with the help of
+            internet and electronic devices. It is a new trend which emerged when internet and the use of electronic
+            devices became popular. Though it had came into existence earlier, it wasn’t that much popular as
+            traditional learning.
+            As the name suggests, which means electronic learning, one should require an electronic device and internet
+            facility. Usually, it was used for research purposes and distant students where mobility were limited. They
+            are available in the form of databases,pre recorded videos ,live streams ,references etc. But it wasn’t much
+            accessed by people initially since it couldn’t replace the traditional learning. But due to many
+            technological changes, it has gained a rapid increase. Conventional classrooms have become dissatisfied in
+            many occasions. It is where the significance of e-learning arises. Widespread use of internet and electronic
+            devices paved the way for increase in use of e-learning. Also various other factors such as COVID pandemic
+            and the lockdown held worldwide also pushed all the educational institutions to adopt e-learning facility.
+            Thus there was huge usage of online learning facilities in the academic year 2020-2021.
+            E- learning is of much advantages because of ease in access and availability . It could be accessed at
+            anytime from anywhere with the help of internet and an electronic device. The purpose of learning is to
+            provide the required knowledge to the student. It is actually served here. He/she gets what they need from
+            this platform. Just as a student interact with a teacher directly, an individual interacts with the wide
+            world of knowledge. "
+        </h3>
+
+    </div>
+    <div class="myp1">
+        <h2>Author 1 :</h2>
+        <h3 id="my1">
+        <img id="m1" src="/static/img/myphoto.jpeg" alt="">
+            <p> Mahendra Pratap Singh <br>
+                B.Tech (Computer Science Engineering)</p>
+           
+        </h3>
+    </div>
+    <div class="myp1">
+        <h2>Author 2 :</h2>
+        <h3 id="my1">
+        <img id="m1" src="/static/img/rphoto.jpeg" alt="">
+            <p> Ratan kumar Nag <br>
+                B.Tech (Computer Science Engineering)</p>
+           
+        </h3>
+    </div>
+
+</body>
+
+</html>
+{% endblock body %}

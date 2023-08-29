@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height,width,border and background</title>
+    <style>
+        #firstpara{
+            background-color:yellow;
+            margin-left:300px;
+            margin-top:1px;
+            padding-left:170px ;
+            height: 70px;
+            width: 400px;
+            border-style: solid;
+            border-color: blue;  
+             border-width: 0px;/* you can write in form of border: 2px solid green */
+            border-radius: 25px;
+            font-size:50px;
+        }
+        .imgcontain1{
+            
+            margin:0px 0px 0px 0px;
+            padding-top:10px;
+            padding-bottom:10px;
+            background-color:blue;
+            {% comment %} height: 1500px; {% endcomment %}
+        }
+        h2{
+            color:teal;
+            margin-left:420px;
+            font-size:55px;
+            text-shadow: -3px -4px  2px greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imgcontain1" style="background-image: url('/static/img/tech5.jpg'); width="500"; height="600"; ></style>
+        
+        <h2> Learning Point</h2>
+    <a href="/contact"><p id="firstpara">HTML</p></a>
+    <a href="/align"><p id="firstpara">CSS</p></a>
+    <a href="/contact"><p id="firstpara">Cyber Security </p></a>
+    <a href="/contact"><p id="firstpara">Python</p></a>
+    <a href="/contact"><p id="firstpara">Java</p></a>
+    <a href="/contact"><p id="firstpara">Database</p></a>
+    <a href="/contact"><p id="firstpara">Machine Learning</p></a>
+    <a href="/contact"><p id="firstpara">A  I</p></a>
+    <a href="/contact"><p id="firstpara"> Compiler</p></a>
+    </div>
+</body>
+</html>

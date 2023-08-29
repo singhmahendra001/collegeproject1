@@ -1,0 +1,273 @@
+<html>
+<head>
+<link href="para.css" rel="stylesheet"/>
+<style>
+.m{width:100%;
+height:100%;
+}
+
+.n{width:100%;
+height:100%;
+
+}
+.k{width:20%;
+height:100%;
+float:left;
+}
+
+
+
+.c{
+position:relative;
+left:310px;
+top:-600px;
+
+max-height:auto;
+max-width:1020px;
+}
+ul{
+  color: mediumvioletred;
+}
+h2{
+  color: blue;
+}
+#str1{
+  color: yellowgreen;
+}
+
+</style>
+<script type="text/javascript">
+function fun1()
+{
+	document.getElementById("div1").innerHTML=document.getElementById("t1").value;
+}
+function fun2()
+{
+	document.getElementById("div2").innerHTML=document.getElementById("t2").value;
+}
+function fun3()
+{
+	document.getElementById("div3").innerHTML=document.getElementById("t3").value;
+}
+function fun4()
+{
+	document.getElementById("div4").innerHTML=document.getElementById("t4").value;
+}
+function fun5()
+{
+	document.getElementById("div5").innerHTML=document.getElementById("t5").value;
+}
+</script>
+{% load static %}
+<link rel="stylesheet" href={% static "para.css"%}>
+</head>
+<body1>
+
+ <div class="m">
+	
+	    <div class="k">
+                    
+					
+                        
+                          
+					     
+					
+					   
+      <h1>CSS Tutorial</h1>  
+<!-- <button class="button button1"><a id="str" href="c.html">HTML HOME</a></button>            -->
+<button class="button button2"><a id="str" href="/intro">CSS Introduction</a></button>
+<button class="button button3"><a id="str" href="/selector">CSS Selector</a></button>
+<button class="button button1"><a id="str" href="/comments">CSS Comments</a></button>
+<button class="button button2"><a id="str" href="/element">CSS Border</a></button>
+<button class="button button3"><a id="str" href="/boxmodel">CSS Boxmodel</a></button>
+<button class="button button1"><a id="str" href="/list">CSS List</a></button>
+<button class="button button2"><a id="str" href="/navigation">CSS Navigation</a></button>
+<button class="button button3"><a id="str" href="/position">CSS Position</a></button>
+<button class="button button1"><a id="str" href="/imggallery">CSS ImageGallery</a></button>
+<button class="button button2"><a id="str" href="/align">CSS Align</a></button>
+<button class="button button3"><a id="str" href="/form">CSS Form</a></button>
+
+		</div>			  
+             
+    </div>    
+<div class="c">
+<article>
+<div class="l">
+<h1>CSS SELECTOR </h1>
+</div>
+<h2>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+ </h2>
+ <h3 id="str1">We can divide CSS selectors into five categories:</h3>
+ <h3 > 
+   <ul>
+     <li>Simple selectors (select elements based on name, id, class) </li>
+     <li> Combinator selectors (select elements based on a specific relationship between them) </li>
+     <li> Pseudo-class selectors (select elements based on a certain state)
+    </li>
+     <li> Pseudo-elements selectors (select and style a part of an element) 
+      Attribute selectors (select elements based on an attribute or attribute value)</li>
+      <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+   </ul>
+ </h3>
+   <h1 style="color:goldenrod"> Element Selector :</h1>
+   <h2>The element selector selects HTML elements based on the element name.</h2>
+ <h3>See this example:</h3>
+ <div style="float:left;width:100%">
+
+<div style="float:left;width:50%">
+
+<div class="runcode" style="height:70%">
+
+<textarea id="t1" style="width:100%;height:515px;font-size:20px;color:#0040ff;background-color:#f1f1f1!important">
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  #gtr{
+    background-color: #00FFCC;
+    text-align: center;
+    color: red;
+  } 
+  </style>
+  </head>
+  <body>
+  <h1 id="gtr">
+  <p>Every paragraph will be affected by the style.</p>
+  <p id="para1">Me too!</p>
+  <p>And me!</p>
+  </h1>
+  </body>
+  </html>
+  
+   
+    
+
+</div>
+<input type="button" value="Try yourself" onclick="fun1()"  style="color:blue; height:38px;width:150px;background-color:#00FFCC; border:#00FFCC;font-weight:bold;font-size:20px ;border-radius:20px; cursor: pointer; "onmouseover="this.style.color='#990066' "onmouseout="this.style.color='blue'"/><br/>
+
+</div>
+<div style="float:left;width:50%">
+<div id="div1" style="font-size:25px;;margin-left:30px"><h1>output</h1></div>
+</div>
+
+</div>
+
+<hr/>
+<h1 style="color:goldenrod"> ID Selector :</h1>
+<h3>
+<ul>
+   <li>The id selector uses the id attribute of an HTML element to select a specific element. </li> <li>
+
+    The id of an element is unique within a page, so the id selector is used to select one unique element! </li> <li>
+    
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.</li>
+  </ul>
+</h3>
+ <h3>See this example:</h3>
+ <div style="float:left;width:100%">
+
+<div style="float:left;width:50%">
+
+<div class="runcode" style="height:70%">
+
+<textarea id="t2" style="width:100%;height:515px;font-size:20px;color:#0040ff;background-color:#f1f1f1!important">
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+#para1 {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p id="para1">Hello World!</p>
+<p>This paragraph is not affected by the style.</p>
+
+</body>
+</html>
+
+
+  
+   
+    
+</textarea> 
+</div>
+<input type="button" value="Try yourself" onclick="fun2()"  style="color:blue; height:38px;width:150px;background-color:#00FFCC; border:#00FFCC;font-weight:bold;font-size:20px ;border-radius:20px; cursor: pointer; "onmouseover="this.style.color='#990066' "onmouseout="this.style.color='blue'"/><br/>
+
+</div>
+<div style="float:left;width:50%">
+<div id="div2" style="font-size:25px;;margin-left:30px"><h1>output</h1></div>
+</div>
+
+</div>
+
+<hr/>
+
+
+<h1 style="color:goldenrod"> CLASS Selector :</h1>
+<h3>
+<ul>
+   <li>The class selector selects HTML elements with a specific class attribute. </li> 
+ <li> To select elements with a specific class, write a period (.) character, followed by the class name.</li>
+</h3>
+  
+  </ul>
+ <h3>See this example:</h3>
+ <div style="float:left;width:100%">
+
+<div style="float:left;width:50%">
+
+<div class="runcode" style="height:70%">
+
+<textarea id="t3" style="width:100%;height:515px;font-size:20px;color:#0040ff;background-color:#f1f1f1!important">
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+.center{
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Red and center-aligned heading</h1>
+<p class="center">Red and center-aligned paragraph.</p> 
+
+</body>
+</html>
+
+  
+   
+    
+</textarea> 
+</div>
+<input type="button" value="Try yourself" onclick="fun3()"  style="color:blue; height:38px;width:150px;background-color:#00FFCC; border:#00FFCC;font-weight:bold;font-size:20px ;border-radius:20px; cursor: pointer; "onmouseover="this.style.color='#990066' "onmouseout="this.style.color='blue'"/><br/>
+
+</div>
+<div style="float:left;width:50%">
+<div id="div3" style="font-size:25px;;margin-left:30px"><h1>output</h1></div>
+</div>
+
+</div>
+
+<hr/>
+
+
+
+
+
+ 
+</article>
+</div>
+
+
+</body1>
+</html>

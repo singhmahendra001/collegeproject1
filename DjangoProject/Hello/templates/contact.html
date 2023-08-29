@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block tittle %}Contact{% endblock tittle %}
+{% block body %}
+<div class="container-fluid my-3 px-0 ">
+    <img src="/static/img/telephone.jpg" class="d-block w-100" alt="..." width="1100px" height="520px">
+    <h2 class="text-center">Contact Us</h2>
+    <form method="post" action="/contact">
+    {% csrf_token %}
+</div>
+<div class="container">
+    <form>
+        <div class="mb-3 py-0">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
+                placeholder="Enter your name..">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phone" name="phone"aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+    
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email"aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Write about self</label>
+            <textarea class="form-control" id="desc" row="3" name="desc"></textarea> 
+            </div>                
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+</div>
+{% endblock body %}
